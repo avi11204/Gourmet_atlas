@@ -1,0 +1,117 @@
+/* EnterPage.css */
+
+.enter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://t3.ftcdn.net/jpg/08/99/95/38/360_F_899953894_onQeJbtFszoYuUPd79pYnbYmXFg7zLiE.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.enter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.welcome-box {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    border-radius: 10px;
+    padding: 40px 60px; /* Increased padding for more space */
+    max-width: 500px; /* Increased max-width */
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.logo {
+    max-width: 150px; /* Adjust the size of your logo */
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+.enter-container h1 {
+    color: #A10115;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* Larger font size */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.tagline {
+    color: #888;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-style: italic; /* Optional: makes the tagline more distinct */
+}
+
+.button-group .btn {
+    margin: 0 10px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.button-group .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.button-group .btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group .btn-outline-danger {
+    border-color: #A10115;
+    color: #A10115;
+    background-color: transparent;
+}
+
+.button-group .btn-danger {
+    background-color: #A10115;
+    color: white;
+    border-color: #A10115;
+}
+
+.button-group .btn-outline-danger:hover {
+    background-color: #A10115;
+    color: white;
+}
+
+.button-group .btn-danger:hover {
+    background-color: #A10115;
+}
+
+@media (max-width: 768px) {
+    .enter-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .button-group .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .welcome-box {
+        padding: 30px 40px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+/* General page styling */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 1200px; /* Ensuring same width across pages */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #A10115;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #A10115;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styling for recipe image */
+img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* List styling for ingredients */
+ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for instructions */
+ol {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #A10115;
+    border: 1px solid #A10115;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    ul li, ol li {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Recipe Detail Page Layout */
+.recipe-detail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.recipe-detail-container img {
+    width: 50%; /* Image takes half of the container width */
+    max-width: 500px; /* Limit image width */
+}
+
+.recipe-detail-content {
+    width: 50%; /* Recipe details take the other half of the container */
+}

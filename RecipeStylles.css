@@ -1,0 +1,90 @@
+/* Style the container for all recipe cards */
+.recipe-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Style individual recipe cards */
+.recipe-card {
+    background-color: #F0EFEA;
+    border-color: #A10115;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents overflow from card edges */
+    width: 100%; /* Ensure cards fill their column */
+    max-width: 250px; /* Limit card width */
+}
+
+.recipe-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Card image */
+.recipe-card-image {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Card details */
+.recipe-card-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.recipe-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #A10115;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #4d4f56;
+}
+
+.recipe-button {
+    background-color: #A10115;
+    border-color: #A10115;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.recipe-button:hover {
+    background-color: #8a0812;
+    border-color: #8a0812;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1200px) {
+    .recipe-card-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}

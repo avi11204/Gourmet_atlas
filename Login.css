@@ -1,0 +1,142 @@
+/* LoginPage.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering Content */
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('hhttps://t3.ftcdn.net/jpg/09/08/95/82/360_F_908958277_LUQ0F2JzTxsQRZuvfmhIcAkQ8p2YZHhU.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay Effect */
+.holder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Container Styling for Login Box */
+.box {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.85); /* White background with 85% opacity */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    color: #5a1a5f; /* A rich color for headings */
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Input Box Styling */
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #5a1a5f;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: #5a1a5f;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #5a1a5f;
+}
+
+/* Links Styling */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.links a {
+    color: #5a1a5f;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #333;
+}
+
+/* Button Styling */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a1a5f;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .inputBox input {
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 14px;
+    }
+}
