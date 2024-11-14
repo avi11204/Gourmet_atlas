@@ -15,3 +15,8 @@ Gourmet Atlas is a user-friendly recipe finder app designed to help food enthusi
 - Database: MongoDB (with a collection named `GourmetAtlasDB`)
 
 
+![Screenshot (836)](https://github.com/user-attachments/assets/d518ba12-c941-49c0-9163-6c1bbc88f89d)
+![Screenshot (838)](https://github.com/user-attachments/assets/7cc671cc-0c7c-4a5b-8e3c-4dd4daa6c63b)
+![Screenshot (842)](https://github.com/user-attachments/assets/45d50d9a-ebc5-46b1-97f1-54925d66ecee)
+![Screenshot (845)](https://github.com/user-attachments/assets/3c96bb75-9cbd-4178-9d49-42ece698afe4)
+![Screenshot (843)](https://github.com/user-attachments/assets/024e5bc5-5e65-4f13-848a-650a37231334)
